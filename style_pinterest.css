@@ -1,0 +1,79 @@
+
+body, html {
+    color: rgb(33, 25, 34);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 12px;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding:4px 16px 4px 16px
+}
+
+.search__input {
+    display: flex;
+    border: 1px solid lightgray;
+    height: 30px;
+    padding: 10px 20px;
+    border-radius: 999px;
+    width: 120vh
+}
+
+.search__input input {
+    flex: 1;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    align-items: center;
+}
+
+.search__input .material-symbols-outlined {
+    color: gray;
+}
+.material-symbols-outlined:hover{
+    background-color: lightgray;
+    border-radius: 24px;
+    padding: 2px;
+}
+#Inicio{  
+    box-sizing: border-box;
+    background-color: black;
+    color:white;
+    padding: 0 16px 0 16px;
+    border-radius: 24px;
+    cursor:pointer;
+}
+.box_head{
+    box-sizing: border-box;
+    cursor:pointer;
+}
+#grid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding-top: 10px;
+    row-gap: 2px;
+    align-items: stretch;
+    
+  
+}
+.image{
+    border-radius: 24px;
+    width: 35vh;
+    box-sizing: border-box;
+    
+}
+.image:hover{
+    filter:brightness(50%);
+    
+}
+.foto{
+    justify-self: center;
+}
+.item{
+    height: max-content;
+}
+
