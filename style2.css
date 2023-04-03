@@ -4,15 +4,21 @@ body, html {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 12px;
 }
-header{
+nav{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: row;
-    padding:4px 16px 4px 16px
+    padding:4px 16px 4px 16px;
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 999;
 }
 
-.search__input {
+.finder {
     display: flex;
     border: 1px solid lightgray;
     height: 30px;
@@ -21,7 +27,7 @@ header{
     width: 120vh
 }
 
-.search__input input {
+.finder input {
     flex: 1;
     padding: 10px 20px;
     border: none;
@@ -29,7 +35,7 @@ header{
     align-items: center;
 }
 
-.search__input .material-symbols-outlined {
+.finder .material-symbols-outlined {
     color: gray;
 }
 .material-symbols-outlined:hover{
@@ -54,7 +60,7 @@ header{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    padding-top: 10px;
+    padding-top: 10vh;
     row-gap: 2px;
     align-items: stretch;
     
@@ -68,9 +74,18 @@ header{
 }
 .image:hover{
     filter:brightness(50%);
+    /*opacity: 1;*/
     
 }
-.foto{
+/*.botones{
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+}*/
+
+.card-image{
     justify-self: center;
 }
 .item{
